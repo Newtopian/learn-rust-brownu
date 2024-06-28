@@ -44,4 +44,8 @@ fn main() {
     // array indexing is as one would expect
     let second_element = a[1];
     println!("second element is {second_element}");
+
+    let message = "toto";
+    let stuff = [message; 100];
+    println!("{}, {}", stuff[0], stuff[1]);
 }
