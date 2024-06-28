@@ -31,4 +31,17 @@ fn main() {
     //but thhis wont work for some reason seems index access to
     //tuple is not always available... interesting
     //println!("Indexed access from string {tup.0}, {tup.1}, {tup.2} -- will fail compilation !")
+
+    // arrays
+    let a = [1, 2, 3, 4, 5];
+    // arrays live on the stack and thus are fixed in size once created
+    // array type must include type and lenght when declared
+    let a: [i32; 5] = [1, 2, 3, 4, 5]; 
+
+    // array can be declared as such if they are to contain the same value
+    let a = [3; 5]; // creates an array of lenght 5 with all 3
+
+    // array indexing is as one would expect
+    let second_element = a[1];
+    println!("second element is {second_element}");
 }
