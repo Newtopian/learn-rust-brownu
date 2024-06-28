@@ -1,6 +1,17 @@
 const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3; 
 
 fn main() {
+    section_3_2();
+
+    another_function(3);
+}
+
+fn another_function(x: i32){
+    println!("The parameter is {x}")
+}
+fn section_3_2(){
+
+    println!("----------------  Section 3.2 ");
     let x = 5;
     println!("The value of x is: {x}");
 
@@ -48,4 +59,6 @@ fn main() {
     let message = "toto";
     let stuff = [message; 100];
     println!("{}, {}", stuff[0], stuff[1]);
+
+    println!("<< Section 3.2 <<<<<<<<<<<<<<<<<<");
 }
